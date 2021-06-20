@@ -199,6 +199,9 @@ body {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
 }
+/*------------- END PORTFOLIO-BUTTON------------*/
+
+/*--------------description-------------*/
 .site-title {
   font-weight: 700;
   font-size: 18px;
