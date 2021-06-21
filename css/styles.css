@@ -4,6 +4,9 @@
   --accent-color: #2196f3;
   --primary-text-color: #212121;
   --secondary-color: #757575;
+  --background-color: #2f303a;
+  --white-color: #ffffff;
+  --black-color: #000000;
 }
 
 .list {
@@ -18,12 +21,12 @@ body {
 /*-------------HEADER------------*/
 
 .logo-link {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--black-color);
 }
 .logo-accent {
   color: var(--accent-color);
@@ -44,20 +47,8 @@ body {
 .menu-item-link.current {
   color: var(--accent-color);
 }
-
-.mail-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-
-.mail-link:hover,
-.mail-link:focus {
-  color: #000000;
-}
-.tel-link {
+.contakt-link {
+  font-style: 400;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -65,10 +56,17 @@ body {
   color: var(--secondary-color);
 }
 
+.contakt-link:hover,
+.contakt-link:focus {
+  color: var(--accent-color);
+}
+
 /*------------- END HEADER------------*/
 
 /*------------------HERO-----------------*/
-
+.hero {
+  background-color: var(--background-color);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -76,19 +74,17 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: #ffffff;*/
+  color: var(--white-color);
 }
 
 .modal-btn {
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 /*------------------ END HERO -----------------*/
@@ -145,25 +141,25 @@ body {
 
 /*--------------FOOTER----------*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .address {
   font-style: inherit;
 }
 .footer-logo-link {
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-mail,
 .footer-tel {
@@ -178,19 +174,9 @@ body {
 /*--------------END FOOTER---------*/
 
 /*--------------- PORTFOLIO-BUTTON------------*/
-.portfolio-btn-all {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: #ffffff;
-  background-color: var(--accent-color);
-}
+
 .portfolio-btn {
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
